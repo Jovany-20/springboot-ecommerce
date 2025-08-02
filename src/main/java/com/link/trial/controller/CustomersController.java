@@ -8,7 +8,7 @@ import com.link.trial.entity.customers;
 import com.link.trial.repository.CustomersRepository;
 import com.link.trial.service.CustomerService;
 import com.link.trial.service.OrderService;
-import com.link.trial.service.Order_Product_Service;
+
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,13 +21,13 @@ public class CustomersController {
 
 	private final CustomerService customersService;
 	private final OrderService orderService;
-    private final Order_Product_Service orderProductService;
+    
 
     @Autowired
-    public CustomersController(CustomerService customersService, OrderService orderService, Order_Product_Service orderProductService) {
+    public CustomersController(CustomerService customersService, OrderService orderService) {
         this.customersService = customersService;
         this.orderService = orderService;
-        this.orderProductService = orderProductService;
+       
     }
 	
 

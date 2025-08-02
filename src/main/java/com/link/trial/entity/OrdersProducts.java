@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name= "orders_products")
-public class Orders_Products {
+public class OrdersProducts {
 	@EmbeddedId
     private OrdersProductsId id;
 

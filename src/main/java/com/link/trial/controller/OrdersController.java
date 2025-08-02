@@ -11,7 +11,7 @@ import com.link.trial.repository.CustomersRepository;
 import com.link.trial.repository.OrdersRepository;
 import com.link.trial.service.CustomerService;
 import com.link.trial.service.OrderService;
-import com.link.trial.service.Order_Product_Service;
+import com.link.trial.service.OrderProductService;
 
 import java.util.HashMap;
 import java.util.List;
@@ -25,9 +25,9 @@ public class OrdersController {
 
 	private final OrderService orderService;
 	private final CustomerService customersService;
-	private final Order_Product_Service orderProductService;
+	private final OrderProductService orderProductService;
     @Autowired
-    public OrdersController(OrderService orderService, CustomerService customersService, Order_Product_Service orderProductService) {
+    public OrdersController(OrderService orderService, CustomerService customersService, OrderProductService orderProductService) {
         this.orderService = orderService;
 		this.customersService = customersService;
 		this.orderProductService = orderProductService;

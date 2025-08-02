@@ -9,23 +9,23 @@ import org.springframework.stereotype.Service;
 
 import com.link.trial.DTO.OrdersProductsDTO;
 import com.link.trial.entity.OrdersProductsId;
-import com.link.trial.entity.Orders_Products;
+import com.link.trial.entity.OrdersProducts;
 import com.link.trial.entity.Product;
 import com.link.trial.entity.orders;
 import com.link.trial.repository.OrdersRepository;
-import com.link.trial.repository.Orders_ProductsRepository;
+import com.link.trial.repository.OrdersProductsRepository;
 import com.link.trial.repository.ProductRepository;
 
 @Service
-public class Order_Product_Service {
+public class OrderProductService {
 
-    private final Orders_ProductsRepository OPRepo;
+    private final OrdersProductsRepository OPRepo;
     private final OrdersRepository ordersRepository;
     private final ProductRepository productRepository;
 
     @Autowired
-    public Order_Product_Service(
-            Orders_ProductsRepository OPRepo,
+    public OrderProductService(
+            OrdersProductsRepository OPRepo,
             OrdersRepository ordersRepository,
             ProductRepository productRepository) {
         this.OPRepo = OPRepo;
@@ -41,7 +41,7 @@ public class Order_Product_Service {
         }
 
         OrdersProductsId id = new OrdersProductsId(orderId, productId);
-        Orders_Products orderProduct = new Orders_Products(id, quantity, orderOpt.get(), productOpt.get());
+        OrdersProducts orderProduct = new OrdersProducts(id, quantity, orderOpt.get(), productOpt.get());
 
         OPRepo.save(orderProduct);
         return "Added successfully.";
