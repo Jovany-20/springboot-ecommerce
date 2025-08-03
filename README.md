@@ -89,6 +89,6 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-
+```
 The application should now be running on:
 http://localhost:8080
