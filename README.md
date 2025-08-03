@@ -26,15 +26,16 @@ Before running this project, make sure the following tools are installed on your
 ###  1. Install Java JDK 21+
 - Download from: https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html  
 - Or use SDKMAN (Linux/macOS):
-  
+  ``` bash
   sdk install java 21.0.8-tem
-
+  ```
 ###  2. Install Maven
 - Download: https://maven.apache.org/download.cgi
 
 - Check installation:
-
+``` bash
   mvn -v
+```
 
 
 
@@ -42,7 +43,9 @@ Before running this project, make sure the following tools are installed on your
 Download: https://www.postgresql.org/download/
 
 Create a new database:
+``` bash
 CREATE DATABASE ecommerce_db;
+```
 
 
 ---
