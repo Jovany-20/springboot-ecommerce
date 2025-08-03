@@ -38,7 +38,7 @@ Before running this project, make sure the following tools are installed on your
 
 
 
-  ### 3. Install PostgreSQL
+### 3. Install PostgreSQL
 Download: https://www.postgresql.org/download/
 
 Create a new database:
