@@ -47,25 +47,25 @@ CREATE DATABASE ecommerce_db;
 
 ---
 
-## 🧠 Run Project with Eclipse IDE
+##  Run Project with Eclipse IDE
 
 If you prefer running the project using Eclipse IDE, follow these steps:
 
-### 🔹 1. Prerequisites
+###  1. Prerequisites
 
 Make sure you’ve installed:
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [Eclipse IDE for Java Developers](https://www.eclipse.org/downloads/)
 - [Lombok Plugin for Eclipse](https://projectlombok.org/setup/eclipse)
 
-### 🔹 2. Import Project into Eclipse
+###  2. Import Project into Eclipse
 
 1. **Open Eclipse**  
 2. Go to `File` > `Import` > `Existing Maven Projects`
 3. Browse to the cloned `springboot-ecommerce` directory
 4. Make sure it finds the `pom.xml`, then click **Finish**
 
-### 🔹 3. Enable Lombok in Eclipse
+###  3. Enable Lombok in Eclipse
 
 1. **Install Lombok JAR** (if not already):
    - Download from: https://projectlombok.org/download
@@ -80,7 +80,7 @@ Make sure you’ve installed:
    - Go to `Java Compiler > Annotation Processing` and **enable**
    - Apply and close
 
-### 🔹 4. Configure the Database
+###  4. Configure the Database
 
 Edit the `src/main/resources/application.properties`:
 
@@ -90,3 +90,5 @@ spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
+The application should now be running on:
+http://localhost:8080
